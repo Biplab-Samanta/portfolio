@@ -107,7 +107,7 @@ h6 {
 
 .mywork-card-wrap {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(24.25rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(21.25rem, 1fr));
   grid-gap: 2rem;
   padding: 3.5rem 0 0;
 }
@@ -124,7 +124,7 @@ h6 {
 
 .skill-card-wrap {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(24.25rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(21.25rem, 1fr));
   grid-gap: 2rem;
   padding: 3.5rem 0 0;
   text-align: center;
