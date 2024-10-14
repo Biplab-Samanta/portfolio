@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter Tight", sans-serif;
+  background-color: #fdfdfe;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #5e5d60;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #5a1c73;
+}
+
+.sec-padding {
+  padding: 6rem 0;
+}
+
+.img-shadow {
+  -webkit-box-shadow: 0rem 1rem 2.5rem rgba(63, 20, 115, 0.05);
+          box-shadow: 0rem 1rem 2.5rem rgba(63, 20, 115, 0.05);
+}
+
+.btn-solid {
+  font-family: "Montserrat";
+  font-weight: 500;
+  border: 0.0625rem solid #5a1c73;
+  background: #5a1c73;
+  color: #fff;
+  padding: 11px 32px;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+.btn-solid:hover {
+  color: #5a1c73;
+  background: transparent;
+}
+
+.btn-border {
+  font-family: "Montserrat";
+  font-weight: 500;
+  border: 0.0625rem solid #5a1c73;
+  background: transparent;
+  color: #5a1c73;
+  padding: 11px 32px;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+.btn-border:hover {
+  color: #fff;
+  background: #5a1c73;
+}
+
+.sub-header h2 {
+  font-size: 42px;
+  font-weight: 900;
+  color: #5a1c73;
+}
+.sub-header h3.border-text {
+  margin-bottom: -4.5rem;
+  font-size: 60px;
+  font-weight: 900;
+  -webkit-text-stroke: 1px rgba(189, 164, 199, 0.4117647059);
+  -webkit-text-fill-color: transparent;
+}
+
+.portflio-navber {
+  background-color: #fdfdfe;
+}
+.portflio-navber .navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: #000;
+}
+.portflio-navber a.nav-link {
+  color: #000;
+  font-size: 0.85rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.hero-banner .banner-images {
+  max-width: 500px;
+  text-align: center;
+}
+.hero-banner .wcmp-typewrite-header {
+  color: #ad8eb9;
+  text-decoration: none;
+}
+.hero-banner .wcmp-typewrite-header:hover {
+  color: #ad8eb9;
+  text-decoration: none;
+}
+
+.mywork-card-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24.25rem, 1fr));
+  grid-gap: 2rem;
+  padding: 3.5rem 0 0;
+}
+.mywork-card-wrap .work-image {
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+.mywork-card-wrap h6.work-title {
+  font-weight: 600;
+  color: #5a1c73;
+  padding: 1rem 0 0;
+  text-align: center;
+}
+
+.skill-card-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24.25rem, 1fr));
+  grid-gap: 2rem;
+  padding: 3.5rem 0 0;
+  text-align: center;
+}
+.skill-card-wrap .skill-card-item {
+  background: #efe8f1;
+  padding: 2rem 2rem 4rem;
+  border-radius: 0.25rem;
+}
+.skill-card-wrap .skill-card-item .card-icon {
+  font-size: 3.5rem;
+  padding: 0 0 0.5rem;
+  color: #6b3381;
+}
+.skill-card-wrap .skill-card-item h6.card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  position: relative;
+}
+.skill-card-wrap .skill-card-item h6.card-title::after {
+  position: absolute;
+  background: #5a1c73;
+  bottom: -20px;
+  left: 50%;
+  content: "";
+  height: 1px;
+  width: 44px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}/*# sourceMappingURL=style.css.map */
