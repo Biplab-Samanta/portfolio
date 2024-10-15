@@ -56,3 +56,11 @@ window.onload = function () {
     css.innerHTML = ".wcmp-typewrite-header > .wcmp-typewrite-header-wrap { border-right: 0.05em solid #E47A80 }";
     document.body.appendChild(css);
 };
+
+// copywrite date
+var date = new Date();
+var year = date.getFullYear();
+document.getElementById("current-year").innerHTML = year;
+
+
+

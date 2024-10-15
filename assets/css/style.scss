@@ -42,8 +42,8 @@ h6 {
     transition: .5s all ease-in-out;
 
     &:hover {
-        color: #5a1c73;
-        background: transparent;
+        color: #fff;
+        background: #6b3381;
     }
 }
 
@@ -57,8 +57,8 @@ h6 {
     transition: .5s all ease-in-out;
 
     &:hover {
-        color: #fff;
-        background: #5a1c73;
+        color: #5a1c73;
+        background: #efe8f1;
     }
 }
 
@@ -76,6 +76,45 @@ h6 {
         -webkit-text-stroke: 1px #bda4c769;
         -webkit-text-fill-color: transparent;
     }
+}
+
+.social-media-part i {
+    color: #3f1473;
+    border: 0.025rem solid #b2a1c7;
+    border-radius: 50%;
+    font-size: 1rem;
+    line-height: 1.9;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+
+    &:hover {
+        color: #f9f8fb;
+        border: 0.025rem solid #3f1473;
+        background-color: #3f1473;
+        transition: 0.4s all ease-in-out;
+        transform: rotate(360deg);
+    }
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 99;
+    background-color: #391268;
+    border-radius: 50%;
+    color: #f7f6f9;
+    transition: .5s all ease-in-out;
+    height: 44px;
+    width: 43px;
+    text-align: center;
+    line-height: 2.3;
+    visibility: hidden;
+}
+
+.scroll-top.visible {
+    visibility: visible;
 }
 
 // navber
@@ -165,11 +204,44 @@ h6 {
                 bottom: -20px;
                 left: 50%;
                 content: "";
-                height: 1px;
+                height: 0.13rem;
                 width: 44px;
                 transform: translateX(-50%);
             }
         }
     }
 
+}
+
+// footer
+
+
+.portfolio-footer {
+    background-color: #000;
+
+    .social-media-part i {
+        color: #fdfdfe;
+
+        &:hover {
+            color: #000;
+            background-color: #fdfdfe;
+        }
+    }
+
+    .footer-mail {
+        font-family: "Montserrat", sans-serif;
+        color: #bda4c7ab;
+        margin: 0;
+        font-size: 0.85rem;
+        text-align: right;
+        display: block;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    p.copywright {
+        font-size: 0.85rem;
+        font-family: "Montserrat", sans-serif;
+    }
 }

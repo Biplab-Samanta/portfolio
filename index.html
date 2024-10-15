@@ -8,8 +8,11 @@
     <!-- lib -->
 
     <link rel="stylesheet" href="assets/lib/bootstrap-5-0-2.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="assets/lib/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
 
     <!-- for fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -82,6 +85,12 @@
                         <a href="" class="btn btn-solid">Booked a call</a>
                         <a href="" class="btn btn-border">Hire Me</a>
                     </div>
+                    <div class="social-media-part pt-5">
+                        <a href="https://www.facebook.com/MultivendorX"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/MultiVendorX"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@MultiVendorX/videos"><i class="fa-brands fa-whatsapp"></i></a>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,7 +150,7 @@
             </div>
 
             <div class="row pt-5 mt-5">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                     <h3 class="about-sub-title fw-bold mb-3">A Front-End Developer</h3>
                     <p class="mb-4 pb-4">I am a Passionate frontend developer with a knack for crafting responsive and
                         visually
@@ -163,7 +172,7 @@
                             <p>+91 7439156201</p>
                         </li>
                     </ul>
-                    <div class="button-area d-flex gap-3 flex-wrap">
+                    <div class="button-area d-flex gap-4 flex-wrap">
                         <a href="" class="btn btn-solid">Booked a call</a>
                         <a href="" class="btn btn-border">Hire Me</a>
                     </div>
@@ -262,7 +271,51 @@
 
         </div>
     </section> -->
-    <script src="assets/js/script.js"></script>
+    <div class="scroll-top" id="topscroll">
+        <i class="fa-brands fa-space-awesome"></i>
+    </div>
+    <footer class="portfolio-footer">
+        <div class="container pt-4 pb-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="social-media-part">
+                        <a href="https://www.facebook.com/MultivendorX"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/MultiVendorX"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@MultiVendorX/videos"><i class="fa-brands fa-whatsapp"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a class="footer-mail">Email: <span>biplabs776@gmail.com</span></a>
+                </div>
+            </div>
+
+            <hr>
+            <p class="copywright">© <span id="current-year"></span> Biplab Samanta. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 600) {
+                    $('#topscroll').addClass('visible');
+                } else {
+                    $('#topscroll').removeClass('visible');
+                }
+            });
+            // variables 
+            var toTop = $('.scroll-top');
+            // logic
+            toTop.on('click', function () {
+                $('html, body').animate({
+                    scrollTop: $('html, body').offset().top,
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
