@@ -76,6 +76,11 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
+.box-shadow {
+  -webkit-box-shadow: 0rem 1rem 2.5rem rgba(63, 20, 115, 0.03);
+          box-shadow: 0rem 1rem 2.5rem rgba(63, 20, 115, 0.03);
+}
+
 .social-media-part i {
   color: #3f1473;
   border: 0.025rem solid #b2a1c7;
