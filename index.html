@@ -16,6 +16,8 @@
 
     <!-- for fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/b-solid.svg">
@@ -70,7 +72,7 @@
                         <img src="assets/images/banner-final.png" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left">
                     <h6 class="pb-2">Hello!</h6>
                     <h1 class="m-0"><span class="fw-bolder">I am</span> a&nbsp;<a href=""
                             class="wcmp-typewrite-header fw-bolder" data-period="2000"
@@ -111,21 +113,21 @@
 
             <div class="mywork-card-wrap">
 
-                <div class="mywork-card">
+                <div class="mywork-card" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="500">
                     <div class="work-image">
                         <a href="https://multivendorx.com/"><img src="assets/images/First-project.png"
                                 class="img-fluid"></a>
                     </div>
                     <h6 class="work-title">MultiVendorX</h6>
                 </div>
-                <div class="mywork-card">
+                <div class="mywork-card" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="500">
                     <div class="work-image">
                         <a href="https://dualcube.com/"> <img src="assets/images/scnd-project.png"
                                 class="img-fluid"></a>
                     </div>
                     <h6 class="work-title">DualCube</h6>
                 </div>
-                <div class="mywork-card">
+                <div class="mywork-card" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="500">
                     <div class="work-image">
                         <a href="https://bravocharliebeerclub.com/"> <img src="assets/images/thrd-project.png"
                                 class="img-fluid"></a>
@@ -180,7 +182,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="about-image">
+                    <div class="about-image" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="500">
                         <img src="assets/images/designe.png" class="img-fluid img-shadow rounded-3" alt="">
                     </div>
                 </div>
@@ -215,27 +217,27 @@
                 </div>
             </div>
             <div class="skill-card-wrap">
-                <div class="skill-card-item">
+                <div class="skill-card-item" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
                     <div class="card-icon"><i class="fa-brands fa-wordpress"></i></div>
                     <h6 class="card-title">Wordpress Developer</h6>
                 </div>
-                <div class="skill-card-item">
+                <div class="skill-card-item" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">
                     <div class="card-icon"><i class="fa-brands fa-square-web-awesome-stroke"></i></div>
                     <h6 class="card-title">Web Developer</h6>
                 </div>
-                <div class="skill-card-item">
+                <div class="skill-card-item" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
                     <div class="card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
                     <h6 class="card-title">App Developer</h6>
                 </div>
-                <div class="skill-card-item">
+                <div class="skill-card-item" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
                     <div class="card-icon"><i class="fa-brands fa-figma"></i></div>
                     <h6 class="card-title">Figma Developer</h6>
                 </div>
-                <div class="skill-card-item">
+                <div class="skill-card-item" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">
                     <div class="card-icon"><i class="fa-solid fa-pen-fancy"></i></div>
                     <h6 class="card-title">Web Designer</h6>
                 </div>
-                <div class="skill-card-item">
+                <div class="skill-card-item" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
                     <div class="card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
                     <h6 class="card-title">Logo Designer</h6>
                 </div>
@@ -298,10 +300,10 @@
             <p class="copywright">© <span id="current-year"></span> Biplab Samanta. All Rights Reserved.</p>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-
+        AOS.init();
         $(function () {
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 600) {
@@ -319,6 +321,7 @@
                 });
             });
         });
+
     </script>
 </body>
 
